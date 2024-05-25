@@ -1,0 +1,6 @@
+stepDefinitions\utils\ConfigReader.class
+stepDefinitions\users\UserSteps.class
+stepDefinitions\utils\TestContext.class
+runners\TestRunner.class
+stepDefinitions\comments\CommentSteps.class
+stepDefinitions\posts\PostSteps.class

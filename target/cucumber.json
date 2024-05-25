@@ -1,0 +1,1845 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 290949200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:17:55.767Z",
+        "line": 14,
+        "name": "User creates a post (happy path)",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-creates-a-post-(happy-path);;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1973686700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user creates a post with title \"Test Title\" and body \"Test Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test Title\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Test Body\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserCreatesAPostWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the response should contain 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the response should contain the post information with title \"Test Title\" and body \"Test Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test Title\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Test Body\"",
+                  "offset": 82
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theResponseShouldContainThePostInformationWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:17:58.116Z",
+        "line": 15,
+        "name": "User creates a post (happy path)",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-creates-a-post-(happy-path);;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 473095600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user creates a post with title \"Another Title\" and body \"Another Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Another Title\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Another Body\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserCreatesAPostWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the response should contain 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the response should contain the post information with title \"Another Title\" and body \"Another Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Another Title\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Another Body\"",
+                  "offset": 85
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theResponseShouldContainThePostInformationWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:17:58.596Z",
+        "line": 27,
+        "name": "User edits a post (happy path)",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-edits-a-post-(happy-path);;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 460143700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user creates a post with title \"Initial Title\" and body \"Initial Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Initial Title\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Initial Body\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserCreatesAPostWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the response should contain 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 469168900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user edits the post with new title \"Updated Title\" and body \"Updated Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Updated Title\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"Updated Body\"",
+                  "offset": 64
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserEditsThePostWithNewTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the response should contain the post information with title \"Updated Title\" and body \"Updated Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Updated Title\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Updated Body\"",
+                  "offset": 85
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theResponseShouldContainThePostInformationWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:17:59.535Z",
+        "line": 28,
+        "name": "User edits a post (happy path)",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-edits-a-post-(happy-path);;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 467822500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user creates a post with title \"Old Title\" and body \"Old Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Old Title\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Old Body\"",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserCreatesAPostWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the response should contain 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 458022500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user edits the post with new title \"New Title\" and body \"New Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Title\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"New Body\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserEditsThePostWithNewTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the response should contain the post information with title \"New Title\" and body \"New Body\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New Title\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"New Body\"",
+                  "offset": 81
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theResponseShouldContainThePostInformationWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:00.467Z",
+        "line": 31,
+        "name": "User retrieves all posts",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-retrieves-all-posts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 471867900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "the user retrieves the count of all posts",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.theUserRetrievesTheCountOfAllPosts()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 463952400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the user creates a post with title \"my_post\" and body \"posting something\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"my_post\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"posting something\"",
+                  "offset": 54
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserCreatesAPostWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the response should contain 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 490388200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the count of posts should \"increase\" by 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"increase\"",
+                  "offset": 26
+                },
+                {
+                  "val": "1",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theResponseShouldContainTheNewlyCreatedPost(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:01.901Z",
+        "line": 54,
+        "name": "User deletes a post",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-deletes-a-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 515930400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the user retrieves the count of all posts",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.theUserRetrievesTheCountOfAllPosts()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 483688200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "the user creates a post with title \"my post\" and body \"posting something\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"my post\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"posting something\"",
+                  "offset": 54
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserCreatesAPostWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 456740200,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "the user deletes the post",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.theUserDeletesThePost()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1006300,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "the post should be deleted successfully",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.thePostShouldBeDeletedSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100431300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the count of posts should \"decrease\" by 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"decrease\"",
+                  "offset": 26
+                },
+                {
+                  "val": "1",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theResponseShouldContainTheNewlyCreatedPost(java.lang.String,int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:03.469Z",
+        "line": 55,
+        "name": "User deletes a post",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-deletes-a-post;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 79980400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the user retrieves the count of all posts",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.theUserRetrievesTheCountOfAllPosts()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 453335400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "the user creates a post with title \"my another post\" and body \"reposting something\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"my another post\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"reposting something\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserCreatesAPostWithTitleAndBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 452825000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "the user deletes the post",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.theUserDeletesThePost()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "the post should be deleted successfully",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.thePostShouldBeDeletedSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 465437300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the count of posts should \"decrease\" by 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"decrease\"",
+                  "offset": 26
+                },
+                {
+                  "val": "1",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theResponseShouldContainTheNewlyCreatedPost(java.lang.String,int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:04.927Z",
+        "line": 64,
+        "name": "User retrieves comments for a post",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-retrieves-comments-for-a-post;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 461253200,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "the user retrieves comments for post with ID 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.comments.CommentSteps.theUserRetrievesCommentsForPostWithID(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 987500,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "the response should contain comments for post with ID 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 54
+                }
+              ],
+              "location": "stepDefinitions.comments.CommentSteps.theResponseShouldContainCommentsForPostWithID(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:05.393Z",
+        "line": 65,
+        "name": "User retrieves comments for a post",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-retrieves-comments-for-a-post;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 450245600,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "the user retrieves comments for post with ID 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.comments.CommentSteps.theUserRetrievesCommentsForPostWithID(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "the response should contain comments for post with ID 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 54
+                }
+              ],
+              "location": "stepDefinitions.comments.CommentSteps.theResponseShouldContainCommentsForPostWithID(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:05.848Z",
+        "line": 66,
+        "name": "User retrieves comments for a post",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-retrieves-comments-for-a-post;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 447763500,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "the user retrieves comments for post with ID 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.comments.CommentSteps.theUserRetrievesCommentsForPostWithID(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "the response should contain comments for post with ID 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 54
+                }
+              ],
+              "location": "stepDefinitions.comments.CommentSteps.theResponseShouldContainCommentsForPostWithID(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 996600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:06.300Z",
+        "line": 69,
+        "name": "User cannot view a non-existent post",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-cannot-view-a-non-existent-post",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 447134100,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "the user retrieves a post by post id -1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-1",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserRetrievesPostByID(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "the response should contain 404 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user is registered on the social network",
+            "match": {
+              "location": "stepDefinitions.posts.PostSteps.aUserIsRegisteredOnTheSocialNetwork()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:06.752Z",
+        "line": 74,
+        "name": "User cannot delete a non-existent post",
+        "description": "",
+        "id": "social-network---posts-and-comments;user-cannot-delete-a-non-existent-post",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 459140500,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "the user deletes a post by id -100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-100",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.theUserDeletesPostByID(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Social Network - Posts and Comments",
+    "description": "",
+    "id": "social-network---posts-and-comments",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/social-network-test.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-25T03:18:07.218Z",
+        "line": 4,
+        "name": "Retrieve All Users",
+        "description": "",
+        "id": "user-management;retrieve-all-users",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 455602400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user sends a GET request to retrieve all users",
+            "match": {
+              "location": "stepDefinitions.users.UserSteps.theUserSendsGETRequestToUsersEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 214058400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the response should contain a list of users",
+            "match": {
+              "location": "stepDefinitions.users.UserSteps.theResponseStatusCodeShouldBe()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:07.893Z",
+        "line": 17,
+        "name": "Retrieve a User by ID",
+        "description": "",
+        "id": "user-management;retrieve-a-user-by-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 454608800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user sends a GET request to retrieve the user by ID 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theUserSendsGETRequestToUserEndpoint(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23991000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the response should contain the user data for ID 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theResponseShouldContainUserDataForID(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:08.376Z",
+        "line": 18,
+        "name": "Retrieve a User by ID",
+        "description": "",
+        "id": "user-management;retrieve-a-user-by-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 455166500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user sends a GET request to retrieve the user by ID 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theUserSendsGETRequestToUserEndpoint(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2965700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the response should contain the user data for ID 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theResponseShouldContainUserDataForID(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:08.839Z",
+        "line": 19,
+        "name": "Retrieve a User by ID",
+        "description": "",
+        "id": "user-management;retrieve-a-user-by-id;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 467620100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user sends a GET request to retrieve the user by ID 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theUserSendsGETRequestToUserEndpoint(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the response should contain 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1995300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the response should contain the user data for ID 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theResponseShouldContainUserDataForID(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:09.313Z",
+        "line": 22,
+        "name": "Retrieve a User by non-existent ID",
+        "description": "",
+        "id": "user-management;retrieve-a-user-by-non-existent-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 458599200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user sends a GET request to retrieve the user by ID -1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-1",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theUserSendsGETRequestToUserEndpoint(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1002400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the response should contain 404 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:09.777Z",
+        "line": 35,
+        "name": "Create a New User",
+        "description": "",
+        "id": "user-management;create-a-new-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1998600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user wants to create a new user with name \"John Doe\", email \"john.doe@example.com\", and username \"johndoe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John Doe\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"john.doe@example.com\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"johndoe\"",
+                  "offset": 101
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theUserWantsToCreateNewUser(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 447531200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user sends a POST request to create a new user",
+            "match": {
+              "location": "stepDefinitions.users.UserSteps.theUserSendsPOSTRequestToUsersEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the response should contain 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2977200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the created user data should match the provided input",
+            "match": {
+              "location": "stepDefinitions.users.UserSteps.theCreatedUserDataShouldMatchProvidedInput()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:10.233Z",
+        "line": 36,
+        "name": "Create a New User",
+        "description": "",
+        "id": "user-management;create-a-new-user;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user wants to create a new user with name \"Jane Smith\", email \"jane.smith@example.com\", and username \"janesmith\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jane Smith\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"jane.smith@example.com\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"janesmith\"",
+                  "offset": 105
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theUserWantsToCreateNewUser(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 457013200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user sends a POST request to create a new user",
+            "match": {
+              "location": "stepDefinitions.users.UserSteps.theUserSendsPOSTRequestToUsersEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the response should contain 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2999800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the created user data should match the provided input",
+            "match": {
+              "location": "stepDefinitions.users.UserSteps.theCreatedUserDataShouldMatchProvidedInput()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:10.698Z",
+        "line": 37,
+        "name": "Create a New User",
+        "description": "",
+        "id": "user-management;create-a-new-user;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user wants to create a new user with name \"Alice Lee\", email \"alice.lee@example.com\", and username \"alicelee\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alice Lee\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"alice.lee@example.com\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"alicelee\"",
+                  "offset": 103
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theUserWantsToCreateNewUser(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 453534800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user sends a POST request to create a new user",
+            "match": {
+              "location": "stepDefinitions.users.UserSteps.theUserSendsPOSTRequestToUsersEndpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1010700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the response should contain 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.posts.PostSteps.the_post_should_successful(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8003400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the created user data should match the provided input",
+            "match": {
+              "location": "stepDefinitions.users.UserSteps.theCreatedUserDataShouldMatchProvidedInput()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-25T03:18:11.166Z",
+        "line": 40,
+        "name": "Delete a existing User",
+        "description": "",
+        "id": "user-management;delete-a-existing-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 454122300,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "the user deletes a user by id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theUserDeletesByID(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 992200,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "the response status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinitions.users.UserSteps.theResponseStatusCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "User Management",
+    "description": "",
+    "id": "user-management",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/user-management.feature",
+    "tags": []
+  }
+]
